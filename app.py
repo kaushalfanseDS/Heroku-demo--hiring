@@ -11,7 +11,7 @@ model = pickle.load(open('model.pkl', 'rb'),encoding='latin1')
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path,'static'),
-    'favicon.ico',mimetype='images/favicon.png') 
+    'favicon.ico',mimetype='image/favicon.png') 
 
 @app.route('/')
 def home():
